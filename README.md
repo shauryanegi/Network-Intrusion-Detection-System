@@ -23,7 +23,8 @@ For more about data: http://www.unb.ca/cic/datasets/nsl.html
 LIST OF COLUMNS FOR THE DATA SET:
 
 ["duration","protocol_type","service","flag","src_bytes","dst_bytes","land", "wrong_fragment","urgent","hot","num_failed_logins","logged_in", "num_compromised","root_shell","su_attempted","num_root","num_file_creations", "num_shells","num_access_files","num_outbound_cmds","is_host_login", "is_guest_login","count","srv_count","serror_rate", "srv_serror_rate", "rerror_rate","srv_rerror_rate","same_srv_rate", "diff_srv_rate", "srv_diff_host_rate","dst_host_count","dst_host_srv_count","dst_host_same_srv_rate", "dst_host_diff_srv_rate","dst_host_same_src_port_rate", "dst_host_srv_diff_host_rate","dst_host_serror_rate","dst_host_srv_serror_rate", "dst_host_rerror_rate","dst_host_srv_rerror_rate","attack", "last_flag"]
-BASIC FEATURES OF EACH NETWORK CONNECTION VECTOR:
+
+## BASIC FEATURES OF EACH NETWORK CONNECTION VECTOR:
 
     Duration: Length of time duration of the connection
     Protocol_type: Protocol used in the connection
@@ -35,7 +36,7 @@ BASIC FEATURES OF EACH NETWORK CONNECTION VECTOR:
     Wrong_fragment: Total number of wrong fragments in this connection
     Urgent: Number of urgent packets in this connection. Urgent packets are packets with the urgent bit activated
 
-CONTENT RELATED FEATURES OF EACH NETWORK CONNECTION VECTOR:
+## CONTENT RELATED FEATURES OF EACH NETWORK CONNECTION VECTOR:
 
     Hot: Number of "hot" indicators in the content such as: entering a system directory, creating programs and executing programs
     Num_failed _logins: Count of failed login attempts
@@ -51,7 +52,7 @@ CONTENT RELATED FEATURES OF EACH NETWORK CONNECTION VECTOR:
     Is_hot_login: 1 if the login belongs to the "hot" list i.e., root or admin; else 0
     Is_guest_login: 1 if the login is a "guest" login; 0 otherwise
 
-TIME RELATED TRAFFIC FEATURES OF EACH NETWORK CONNECTION VECTOR:
+## TIME RELATED TRAFFIC FEATURES OF EACH NETWORK CONNECTION VECTOR:
 
     Count: Number of connections to the same destination host as the current connection in the past two seconds
     Srv_count: Number of connections to the same service (port number) as the current connection in the past two seconds
@@ -63,7 +64,7 @@ TIME RELATED TRAFFIC FEATURES OF EACH NETWORK CONNECTION VECTOR:
     Diff_srv_rate: The percentage of connections that were to different services, among the connections aggregated in count (23)
     diff_host rate: percentage of connections that were to different destination machines among the connections aggregated in srv_count (24)
 
-HOST BASED TRAFFIC FEATURES IN A NETWORK CONNECTION VECTOR:
+## HOST BASED TRAFFIC FEATURES IN A NETWORK CONNECTION VECTOR:
 
     Dst_host_count: Number of connections having the same destination host IP address
     Dst_host_srv_ count: Number of connections having the same port number
@@ -76,7 +77,7 @@ HOST BASED TRAFFIC FEATURES IN A NETWORK CONNECTION VECTOR:
     Dst_host_rerro r_rate: The percentage of connections that have activated the flag (4) REJ, among the connections aggregated in dst_host_count (32)
     Dst_host_srv_r error_rate: The percentage of connections that have activated the flag (4) REJ, among the connections aggregated in dst_host_srv_c ount (33)
 
-Type Features:
+## Type Features:
 
 Nominal: Protocol_type(2), Service(3), Flag(4)
 
@@ -93,7 +94,7 @@ Attack Class : Attack Type
 
     U2R : Buffer_overflow, Loadmodule, Rootkit, Perl, Sqlattack, Xterm, Ps (7)
 
-ATTACK CLASS:
+## ATTACK CLASS:
 
     DOS: Denial of service is an attack category, which depletes the victim‟s resources thereby making it unable to handle legitimate requests – e.g. syn flooding. Relevant features: “source bytes” and “percentage of packets with errors”
     Probing: Surveillance and other probing attack‟s objective is to gain information about the remote victim e.g. port scanning. Relevant features: “duration of connection” and “source bytes”
