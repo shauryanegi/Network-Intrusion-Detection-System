@@ -9,7 +9,8 @@ With the enormous growth of computer networks usage and the huge increase in the
 The research in the intrusion detection field has been mostly focused on a nomaly-based and misuse-based detection techniques for a long time. While misuse-based detction is generally favoured in commercial products due to its predictability and high accuracy, in academic research anomally detection is typically conceived as a more powerful method due to its theoretical potential for addressing novel attacks.
 
 Conducting a through analysis of the recent research trend is anomaly detection, one will encounter several machine learning methods reported to have a very high detection rate of 98% while keeping the false alarm rate at 1%. However, when we look at the state of art IDS solutions and comercial tools, there is no evidence of using anomaly detection approaches, and practitioners still think that it is an immature technology. To find the reason of this contrast, lots of research was done in anomaly detection and considered various aspects such as learning, and detection approaches, training data sets, testing data sets, and evaluation methods.
-BUSINESS PROBLEM:
+
+## BUSINESS PROBLEM:
 
 The task is to build network intrusion detection system to detect anamolies and attacks in the network. There are two problems.
 
@@ -22,7 +23,8 @@ The task is to build network intrusion detection system to detect anamolies and 
 This data is KDDCUP’99 data set, which is widely used as one of the few publicly available data sets for network-based anomaly detection systems.
 
 For more about data: http://www.unb.ca/cic/datasets/nsl.html
-LIST OF COLUMNS FOR THE DATA SET:
+
+## LIST OF COLUMNS FOR THE DATA SET:
 
 ["duration","protocol_type","service","flag","src_bytes","dst_bytes","land", "wrong_fragment","urgent","hot","num_failed_logins","logged_in", "num_compromised","root_shell","su_attempted","num_root","num_file_creations", "num_shells","num_access_files","num_outbound_cmds","is_host_login", "is_guest_login","count","srv_count","serror_rate", "srv_serror_rate", "rerror_rate","srv_rerror_rate","same_srv_rate", "diff_srv_rate", "srv_diff_host_rate","dst_host_count","dst_host_srv_count","dst_host_same_srv_rate", "dst_host_diff_srv_rate","dst_host_same_src_port_rate", "dst_host_srv_diff_host_rate","dst_host_serror_rate","dst_host_srv_serror_rate", "dst_host_rerror_rate","dst_host_srv_rerror_rate","attack", "last_flag"]
 
