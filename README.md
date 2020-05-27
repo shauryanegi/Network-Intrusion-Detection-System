@@ -1,5 +1,7 @@
 # Network-Intrusion-Detection-System
 
+![alt text](https://www.dnsstuff.com/wp-content/uploads/2019/06/what-does-IDS-do.png)
+
 ## BUSINESS CONTEXT:
 
 With the enormous growth of computer networks usage and the huge increase in the number of applications running on top of it, network secrity is becoming increasingly more important. All the computer systems suffer from security vulnerabilities which are both technically difficult and economically costly to be solved by the manufacturers. Therefore, the role of Intrusion Detection Systems (IDSs), as special purpose devices to detect anomalies and attacks in the network, is becoming more important.
